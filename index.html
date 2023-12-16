@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Google Search Clone</title>
+</head>
+
+<body class="font-sans bg-gray-100">
+    <div class="container mx-auto p-4">
+        <header class="flex items-center justify-between mb-8">
+            <img src="google.png" alt="Google Logo" class="logo w-16 h-24">
+
+            <div class="relative flex items-center">
+                <input type="text" id="searchInput"
+                    class="search-input px-4 py-2 rounded-l-full focus:outline-none focus:shadow-outline"
+                    placeholder="Search..." 
+                    required>
+                <button onclick="clearSearchInput()"
+                    class="clear-button px-4 py-2 bg-gray-300 mr-3 font-semibold text-gray-600 rounded-r-full hover:bg-gray-400 focus:outline-none focus:shadow-outline">X</button>
+                <button onclick="search()"
+                    class="search-button px-6 py-2 bg-blue-500 text-white rounded-r-full hover:bg-blue-600 focus:outline-none focus:shadow-outline">Google
+                    Search</button>
+            </div>
+
+        </header>
+        <main>
+            <p class="text-gray-600 mb-4">Search results will be displayed here...</p>
+            <!-- Additional search results or features can be added here -->
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
